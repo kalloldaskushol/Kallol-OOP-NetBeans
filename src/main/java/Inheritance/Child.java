@@ -11,7 +11,7 @@ public class Child extends Parent {
     Child(int x){
         super(x); // Imidiate super class
     }
-    int property_amount = 50;
+    //int property_amount = 50;
     
     void m4 () {
         System.out.println("Inside m4 method of child");
@@ -20,8 +20,8 @@ public class Child extends Parent {
         System.out.println("Entering to Child class");
     }
     public static void main(String[] args) {
-        Child obj_Child = new Child(5000);
-        System.out.println();
+        Child obj_Child = new Child(1000);
+
 //        obj_Child.m4();
 //        
 //        // Build Parent class in Child class
@@ -39,7 +39,8 @@ public class Child extends Parent {
 //        System.out.println(obj_Parent.property_amount); // 100 -> By Grandpa
 //        System.out.println(obj_Child.property_amount); // 50 -> direct
     
-        // Assign Property Amount
+        // Assign Property Amount by the help of constructor of child:
+        System.out.println(obj_Child.property_amount); // must  have to comment out other place where it has been initialized;
         
         
     }
