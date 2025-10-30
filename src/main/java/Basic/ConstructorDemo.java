@@ -21,11 +21,16 @@ public class ConstructorDemo {
     String name;
 
     ConstructorDemo() { //default Constructor
+        this("Shourav"); // will call the relavent constructor & This should be the first line of the constructor
+        // this("Shourav", 8); // not possible
+        
         System.out.println("Wellcome! The obj is created");
+        // ConstructorDemo("Zamil"); ---> not possible
+        // call another one
     }
 
     ConstructorDemo(String s) {
-        name = s; // assigning the value
+        this.name = s; // assigning the value
         System.out.println("Name is " + s);
     }
     ConstructorDemo(int a) {
