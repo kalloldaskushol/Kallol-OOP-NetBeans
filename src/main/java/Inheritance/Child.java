@@ -40,8 +40,9 @@ public class Child extends Parent {
 //        System.out.println(obj_Child.property_amount); // 50 -> direct
     
         // Assign Property Amount by the help of constructor of child:
-        System.out.println(obj_Child.property_amount); // must  have to comment out other place where it has been initialized;
+//        System.out.println(obj_Child.property_amount); // must  have to comment out other place where it has been initialized;
         
+        obj_Child.m2(); // will call m2 from parent class
         
     }
     
