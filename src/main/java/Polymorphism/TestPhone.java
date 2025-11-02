@@ -24,19 +24,19 @@ public class TestPhone {
         // IPhone17 ip17 = new IPhone17();
         // ip17.camera();
         IPhone10 ip17 = new IPhone17(); // Up-Casting
-        ip17.camera(); // it will have IPhone17 char
+        ip17.camera(); // it will have IPhone17 charterestics
         // if it was not defined in IPhone17 then it will be gone to IPhone10
         // ----> means Hirarcical
         
         // desides at runtime which method will be used, method overriding / Dynamic method dispatch.
         
-        // ip17.special_ip17(); //Only possible if the method is overridden.
+//         ip17.special_ip17(); //Only possible if the method is overridden.
         
-        // TypeCasting to IPhone17:
-        ((IPhone17)ip17).special_ip17(); // down-casting
-        
-        Phone p = new Phone();
-        p.camera();
+        // To use the prop which are only defined in the IPhone17 class it will have to be TypeCasted into IPhone17:
+        ((IPhone17)ip17).special_ip17(); // down-casting //cz its originally IPhone10 it will now go to IPhone17
+//        
+//        Phone p = new Phone();
+//        p.camera();
         // orelse not available;
     }
 }
