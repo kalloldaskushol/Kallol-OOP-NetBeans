@@ -3,7 +3,7 @@ package Encapsulation;
 //Encapsulation
 //Access control mechanism
 //Data Hiding
-//Grouping/ wraping up
+//Grouping/ Wraping up
 //Can control role of users
 
 
@@ -37,7 +37,7 @@ public class Student {
     
     
     
-
+    // Geter-Seter
     public String getAddress(){
         return this.address;
     }
@@ -57,12 +57,10 @@ public class Student {
     
     public void ChangePassword(String old_p, String new_p, String user_n){
         if(this.password == old_p && this.username == user_n){ 
-        this.password = new_p;
-        System.out.println("Password has been changed succesfully.");
-       }else{
-             System.out.println("Something went wrong!");
+            this.password = new_p;
+            System.out.println("Password has been changed succesfully.");
+        }else{
+            System.out.println("Something went wrong!");
         }
     }
-    
-    
 }
