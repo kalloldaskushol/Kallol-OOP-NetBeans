@@ -15,6 +15,8 @@ public class Student {
     String name; // String is a class in JAVA
     float cgpa; // property of object
     
+    static final double MAX_CGPA = 4.00; // "static final" keyword is used to declare a constant variable in JAVA.
+    
     public static String university = "LU";// Global Variable due to public & static // property of class -> thats why takes only one space in memory not multiple for multiple obj.
     
     // Property of class (when used public access modifier, it acts as global variable)
