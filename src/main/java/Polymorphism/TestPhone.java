@@ -26,7 +26,7 @@ public class TestPhone {
         
         IPhone10 ip17 = new IPhone17(); // Up-Casting
         
-        System.out.println(ip17.price); // ******WHY****************************************************************************************************************************************************************************************
+        System.out.println(ip17.price); // ******WHY******
         ip17.camera(); // it will have IPhone17 charterestics
         
         // if it was not defined in IPhone17 then it will be gone to IPhone10
@@ -37,7 +37,7 @@ public class TestPhone {
 //         ip17.special_ip17(); //Only possible if the method is overridden.
         
         // To use the prop which are only defined in the IPhone17 class it will have to be TypeCasted into IPhone17:
-//        ((IPhone17)ip17).special_ip17(); // down-casting //cz its originally IPhone10 it will now go to IPhone17
+        ((IPhone17)ip17).special_ip17(); // down-casting //cz its originally IPhone10 it will now go to IPhone17
 //        
 //        Phone p = new Phone();
 //        p.camera();

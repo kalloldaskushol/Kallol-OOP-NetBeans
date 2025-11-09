@@ -5,6 +5,8 @@ package Encapsulation;
  * @author Kallol Das Kushol
  */
 
+import java.util.*;
+
 public class EncapsulationTest {
     
     public static void main(String[] args) {
@@ -19,8 +21,21 @@ public class EncapsulationTest {
         //st2.setAddress("Syltet3", "xar", "pass123");
 //        st2.setAddress("Syltet3", "xar", "pass456");
 //        System.out.println(st2.getAddress());
-        st1.ChangePassword("pass123", "pass456", "xam");
+//        st1.ChangePassword("pass123", "pass456", "xam");
         
+
         // H.W ----> WAP 3 attempts = You are locked for life-time;
+        Scanner sc = new Scanner(System.in);
+        for(int i = 0; i<3; i++){
+            System.out.println("Enter Your Username");
+            String u_name = sc.nextLine();
+            System.out.println("Enter Your Password");
+            String o_pass = sc.nextLine();
+            System.out.println("Enter New Password");
+            String n_pass = sc.nextLine();
+            
+            st1.ChangePassword(o_pass, n_pass, u_name);
+        }
+        System.out.println("\nYour Locked for lifetime\nTry in next life <3");
     }
 }

@@ -36,7 +36,6 @@ public class Student {
     }
     
     
-    
     // Geter-Seter
     public String getAddress(){
         return this.address;
@@ -55,12 +54,14 @@ public class Student {
          }
     }
     
+    // Seter ---->
     public void ChangePassword(String old_p, String new_p, String user_n){
-        if(this.password == old_p && this.username == user_n){ 
+        
+        if(this.password.equals(old_p) && this.username.equals(user_n)){ 
             this.password = new_p;
             System.out.println("Password has been changed succesfully.");
         }else{
-            System.out.println("Something went wrong!");
+            System.out.println("Something went wrong!\nTry Again....");
         }
     }
 }
