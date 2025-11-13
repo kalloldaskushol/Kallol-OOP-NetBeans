@@ -33,9 +33,11 @@ public class EncapsulationTest {
             String o_pass = sc.nextLine();
             System.out.println("Enter New Password");
             String n_pass = sc.nextLine();
-            
-            st1.ChangePassword(o_pass, n_pass, u_name);
+            if(i == 3)  {
+                System.out.println("\nYour Locked for lifetime\nTry in next life <3");
+                break;
+            }
+            else st1.ChangePassword(o_pass, n_pass, u_name);
         }
-        System.out.println("\nYour Locked for lifetime\nTry in next life <3");
     }
 }

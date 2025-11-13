@@ -1,19 +1,22 @@
 package Encapsulation;
 
-//Encapsulation
-//Access control mechanism
+//Encapsulation: Access Control mechanism
 //Data Hiding
-//Grouping/ Wraping up
+//Grouping/wraping Up
 //Can control role of users
 
 
 /*
-Encapsulation is a core concept in OOP,
-that involves bundling data (attributes).
-and the methods that operate on that data into a single unit,
-Like a class.
 
-This practice res
+//Encapsulation is a core concept in object-oriented 
+//programming that involves bundling data (attributes) 
+//and the methods (functions) that operate on that data 
+//into a single unit, like a class. This practice restricts 
+//direct access to an object's internal state, 
+//protecting it from unintended modifications 
+//and creating a "black box" that exposes only 
+//what is necessary through a public interface
+
 */
 /**
  *
@@ -36,16 +39,18 @@ public class Student {
     }
     
     
-    // Geter-Seter
-    public String getAddress(){
+    // Getter-Setter: used to access the private properties of a class. It will be public
+    public String getAddress(){ // This is a Getter
         return this.address;
     }
     
 //    void setAddress(String s){
 //        this.address = s;
 //    }
-    public void setAddress(String s, String u_name, String pass){
-         if(this.username == u_name && this.password == pass){ 
+    
+    public void setAddress(String s, String u_name, String pass){ // This is a Setter
+        
+        if(this.username == u_name && this.password == pass){ 
         this.address = s;
         System.out.println("Address has been changed succesfully.");
        }
