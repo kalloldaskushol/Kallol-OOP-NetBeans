@@ -39,24 +39,24 @@ public class Student {
     }
     
     
-    // Getter-Setter: used to access the private properties of a class. It will be public
+    // Getter-Setter: used to access the private properties of a class. It will be ****PUBLIC****.
     public String getAddress(){ // This is a Getter
         return this.address;
     }
     
-//    void setAddress(String s){
+//    void setAddress(String s){ // This is a Setter
 //        this.address = s;
 //    }
     
     public void setAddress(String s, String u_name, String pass){ // This is a Setter
         
         if(this.username == u_name && this.password == pass){ 
-        this.address = s;
-        System.out.println("Address has been changed succesfully.");
-       }
-         else{
+            this.address = s;
+            System.out.println("Address has been changed succesfully.");
+        }
+        else{
              System.out.println("Something went wrong!");
-         }
+        }
     }
     
     // Seter ---->
