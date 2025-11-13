@@ -29,15 +29,18 @@ public class EncapsulationTest {
         for(int i = 0; i<3; i++){
             System.out.println("Enter Your Username");
             String u_name = sc.nextLine();
+            
             System.out.println("Enter Your Password");
             String o_pass = sc.nextLine();
+            
             System.out.println("Enter New Password");
             String n_pass = sc.nextLine();
+            
             if(i == 3)  {
                 System.out.println("\nYour Locked for lifetime\nTry in next life <3");
                 break;
-            }
-            else st1.ChangePassword(o_pass, n_pass, u_name);
+                
+            }else st1.ChangePassword(o_pass, n_pass, u_name);
         }
     }
 }

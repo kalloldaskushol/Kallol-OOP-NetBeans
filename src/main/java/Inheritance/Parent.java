@@ -7,7 +7,7 @@ package Inheritance;
 public class Parent extends GrandPa {
     Parent(){
         this(100); // Calls its own Constructor
-        this.property_amount = 500;// even if prop_amnt is not defined in the class it will edit its parent class prop_amnt; // In this case it will change the prop_amnt of the GrandPa.
+        this.property_amount = 500;// even if prop_amnt is not defined in the class, it will edit its parent class(Grandpa) prop_amnt; // In this case it will change the prop_amnt of the GrandPa.
     }
     Parent(int y){
         super(y);

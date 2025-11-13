@@ -11,6 +11,7 @@ public class Child extends Parent {
     Child(int x){
         super(x); // Imidiate super class
     }
+    
     //int property_amount = 50;
     
     void m4 () {

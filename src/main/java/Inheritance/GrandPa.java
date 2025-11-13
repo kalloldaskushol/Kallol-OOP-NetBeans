@@ -11,7 +11,7 @@ public class GrandPa {
         
     }
     GrandPa(int n){
-        this.property_amount = n;
+        this.property_amount = n; // 100 set from Child class
     }
     
 

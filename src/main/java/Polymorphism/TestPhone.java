@@ -7,7 +7,7 @@ package Polymorphism;
 
 /*
     Polymorphism
-~ Has came from Poly(various/lots of) + morph(form)
+~ Has came from Poly(various/ lots of) + morph(form)
 ~ Two types: 
     1. Compile Time Polymorphism (Method/ Constructor overloading)
     2. Run Time Polymorphism (Overriding)
@@ -24,10 +24,11 @@ public class TestPhone {
         // IPhone17 ip17 = new IPhone17();
         // ip17.camera();
         
-        IPhone10 ip17 = new IPhone17(); // Up-Casting
+        IPhone10 ip17 = new IPhone17(); // Up-Casting -> if the obj is stored in upper class.
         
-        System.out.println(ip17.price); // ******WHY******
-        ip17.camera(); // it will have IPhone17 charterestics
+        System.out.println(ip17.price); // Variable Hiding
+        
+        ip17.camera(); // It will have IPhone17 charterestics
         
         // if it was not defined in IPhone17 then it will be gone to IPhone10
         // ----> means Hirarcical
@@ -36,7 +37,8 @@ public class TestPhone {
         
 //         ip17.special_ip17(); //Only possible if the method is overridden.
         
-        // To use the prop which are only defined in the IPhone17 class it will have to be TypeCasted into IPhone17:
+        // To use the properties which are only defined in the IPhone17 class;
+        // It will have to be TypeCasted into IPhone17 then it can use the properties of IPhone17:
         ((IPhone17)ip17).special_ip17(); // down-casting //cz its originally IPhone10 it will now go to IPhone17
 //        
 //        Phone p = new Phone();
