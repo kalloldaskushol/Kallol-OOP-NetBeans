@@ -1,3 +1,5 @@
+package Practice_MID;
+
 class Person {
     String task;
     Person(String t) { task = t; }

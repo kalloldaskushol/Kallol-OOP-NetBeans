@@ -1,3 +1,5 @@
+package Practice_MID;
+
 class Hero {
     String msg;
     Hero(String m){ msg = m; }

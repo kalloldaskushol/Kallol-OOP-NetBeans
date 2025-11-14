@@ -1,3 +1,5 @@
+package Practice_MID;
+
 class Phone {
     String model;
 }

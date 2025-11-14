@@ -1,3 +1,5 @@
+package Practice_MID;
+
 class Box {
     int data;
     Box(int d) { data = d; }
