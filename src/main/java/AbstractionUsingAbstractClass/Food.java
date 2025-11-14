@@ -37,7 +37,8 @@ public abstract class Food {
     }
     
     abstract void price();//abstract method
-//    void price(){//concrete method
+    
+//    void price(){ //concrete method
 //        
 //    }
     
