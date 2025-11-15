@@ -6,7 +6,7 @@ package Basic;
  */
 
 public class print {
-// in a java source file their must be a public class & the public class wll be similar to the file 
+// in a java source file their must be a public class & the public class will be similar to the file 
     
     public static void main(String[] args){
         System.out.println("Hello World From kallol");

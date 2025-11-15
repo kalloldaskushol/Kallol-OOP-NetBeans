@@ -1,8 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Basic;
+package Basic; // Folder Structure
 
 /**
  *
@@ -17,7 +13,7 @@ public class MethodDemo {
         System.out.println("I have nothing");
     }
     
-    String name (String f_n){
+    String name (String f_n){ // This is a parameter
         this.first_name = f_n;
         System.out.println("Your first name is: " + f_n);
         return "";
@@ -35,7 +31,7 @@ public class MethodDemo {
     
     public static void main(String[] args) {
         MethodDemo m1 = new MethodDemo();
-        m1.name("Kallol", "Das Kushol"); // this is argument
+        m1.name("Kallol", "Das Kushol"); // This is argument
         
         m1.address = "Syl";
         String s = m1.getAddress();

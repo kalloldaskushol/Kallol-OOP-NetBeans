@@ -9,7 +9,7 @@ import java.util.Scanner;
 //import java.util.*; all folder comes if we give *
 
 
-// There must have a public (actually only public class)class in a java and the class name must be similar to the class name
+// There must have a public (actually only public class) class in a java and the class name must be similar to the class name
 
 
 public class InputExample {
