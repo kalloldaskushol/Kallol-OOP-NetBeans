@@ -1,5 +1,8 @@
 package Encapsulation;
 
+// Javas bytecode is machine independent.
+// But JVM is machine dependent.
+
 /**
  *
  * @author Kallol Das Kushol
