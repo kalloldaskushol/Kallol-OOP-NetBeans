@@ -25,8 +25,8 @@ public class CheckedException {
                 System.out.println("IO Exception Happened!!!!");
             }
 
-            } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
                 System.out.println("File not Found.");
-            }
+        }
         }
     }
