@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ExceptionHandling;
 
 /**
@@ -10,9 +6,10 @@ package ExceptionHandling;
  */
 public class TestException {
     double balance = 500; 
-    void withdraw(double amount) throws CustomException {
+    void withdraw(double amount){
         if(amount <= balance){
             balance -= amount;
+            System.out.println("Cash deducted");
         }else {
             try{
                 throw new CustomException("Insufficient Balance!!!!");
@@ -22,8 +19,9 @@ public class TestException {
             }
         }
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CustomException { // As im making my custom exception. 
+//        have to add it other wise code will not run due to the checkedException is a runtime exception
         TestException TE = new TestException();
-//        TE.withdraw(5000); // have to check
+        TE.withdraw(50); // have to check
     }
 }
