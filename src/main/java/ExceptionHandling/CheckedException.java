@@ -12,11 +12,11 @@ public class CheckedException {
 
     public static void main(String[] args) {
         try {
-            FileInputStream fs = new FileInputStream("src/main/java/ExceptionHandling/newfile.txt"); // Starts searching from src
-         
+            FileInputStream fs = new FileInputStream("src/main/java/ExceptionHandling/newfile"); // Starts searching from src
+
             try {
                 int ch = fs.read();// returns in integer format from byteStream or by reading byte Stream
-                while(ch != -1){
+                while (ch != -1) {
                     //ch = fs.read();
                     System.out.print((char) ch);
                     ch = fs.read();
@@ -26,7 +26,7 @@ public class CheckedException {
             }
 
         } catch (FileNotFoundException e) {
-                System.out.println("File not Found.");
-        }
+            System.out.println("File not Found.");
         }
     }
+}
