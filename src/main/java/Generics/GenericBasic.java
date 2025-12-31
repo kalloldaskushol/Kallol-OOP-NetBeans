@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /*
 Generics -> Generics allows type perameters in classes, interfaces, constructor and methods;
 
-instead  of writing code for each type (int, String, etc.), we can write Generic version and the compiler replaces it with the required type.
+~Instead of writing code for each type (int, String, etc.), we can write Generic version and the compiler replaces it with the required type.
 
 */
 
