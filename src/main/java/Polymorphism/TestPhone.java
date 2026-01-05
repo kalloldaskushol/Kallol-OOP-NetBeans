@@ -21,21 +21,21 @@ Characteristics:
 
 public class TestPhone {
     public static void main(String[] args) {
-        // IPhone17 ip17 = new IPhone17();
-        // ip17.camera();
+        //IPhone17 ip17 = new IPhone17();
+        //ip17.camera();
         
         IPhone10 ip17 = new IPhone17(); // Up-Casting -> if the obj is stored in upper class.
         
-        System.out.println(ip17.price); // Variable Hiding
+        //System.out.println(ip17.price); // Variable Hiding -> for variable parents have higher priority.
         
-        ip17.camera(); // It will have IPhone17 charterestics
+        //ip17.camera(); // It will have IPhone17 charterestics
         
         // if it was not defined in IPhone17 then it will be gone to IPhone10
         // ----> means Hirarcical
         
         // desides at runtime which method will be used, method overriding / Dynamic method dispatch.
         
-//         ip17.special_ip17(); //Only possible if the method is overridden.
+         //ip17.special_ip17(); //Only possible if the method is overridden(Parent class & child class has the same method).
         
         // To use the properties which are only defined in the IPhone17 class;
         // It will have to be TypeCasted into IPhone17 then it can use the properties of IPhone17:

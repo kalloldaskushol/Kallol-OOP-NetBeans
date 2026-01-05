@@ -43,11 +43,8 @@ public abstract class Food {
 //    }
     
     abstract void color();
+    
     void weight(){
         
-    }
-    
-    
-    
-    
+    }    
 }

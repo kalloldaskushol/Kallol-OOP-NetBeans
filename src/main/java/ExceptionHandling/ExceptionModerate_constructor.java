@@ -4,7 +4,7 @@ public class ExceptionModerate_constructor {
 
     ExceptionModerate_constructor() {
         //try{
-        //this(0);
+//        this(0);
         new ExceptionModerate_constructor(0);
         //}
         //catch(ArithmeticException e){

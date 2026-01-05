@@ -10,10 +10,10 @@ public class ExceptionModerate {
         System.out.println("E3");
     }
     
-     void E2(){
+    void E2(){
         System.out.println("E2");
         try{
-        E3();
+            E3();
         }catch(ArithmeticException e){
             E3();
             System.out.println("Tragedy Handled");

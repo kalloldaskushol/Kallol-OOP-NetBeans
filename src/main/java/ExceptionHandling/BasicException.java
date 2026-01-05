@@ -37,7 +37,7 @@ public class BasicException {
         System.out.println("Hello");
 //        System.out.println( 10/5 );
         try{
-        System.out.println( 10/0 ); // This is an exception // will stop here
+            System.out.println( 10/0 ); // This is an exception // will stop here
             System.out.println("This line will not work; cz it will leave when it founds the error line.");
         } catch(ArithmeticException e){
             System.out.println("Armetic Exception Handled <3 ");

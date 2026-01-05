@@ -54,10 +54,5 @@ public class GenericBasic {
         
         String c = list1.get(0); // no need of explicit type casting
     
-    
-        
-        
-        
-        
     }
 }

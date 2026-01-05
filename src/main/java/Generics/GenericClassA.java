@@ -22,8 +22,8 @@ public class GenericClassA<T> {
     
     List<T>list_containner = new ArrayList<>();
     
-    void addToList(T v){
-        list_containner.add(v);        
+    void addToList(T val){
+        list_containner.add(val);        
     }
     
     T getFromList(int idx){
@@ -36,7 +36,7 @@ public class GenericClassA<T> {
         GenericClassA obj1 = new GenericClassA();
         
 //        obj1.setValue(7);
-        obj1.setValue("Hello"); // not possible if <T> is not used. If not used then it would have taken it as wrong type inserting.
+        obj1.setValue("Hello"); // It was not possible if <T> is not used. If not used then it would have taken it as wrong type inserting.
 //        System.out.println(obj1.getValue());
         
         GenericClassA<String> obj2 = new GenericClassA<> ();

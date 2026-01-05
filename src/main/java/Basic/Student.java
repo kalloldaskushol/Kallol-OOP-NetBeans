@@ -12,6 +12,13 @@ public class Student {
     
     static final double MAX_CGPA = 4.00; // "static final" keyword is used to declare a constant variable in JAVA.
     
+    /*A variable declared inside a class and marked with the static keyword is called a class variable in Java.
+        1. Class Variable → static variable (can change)
+
+        2. Constant Variable → static final variable (cannot change)
+
+        👉So -> All constants are class variables, but not all class variables are constants.
+    */
     public static String university = "LU";// Global Variable due to public & static // property of class -> thats why takes only one space in memory not multiple for multiple obj.
     
     // Property of class (when used public access modifier, it acts as global variable)

@@ -10,7 +10,7 @@ public class IPhone10 extends Phone {
     void camera(){
         System.out.println("IPhone10, I have a dual camera.");
     }
-    void special_ip17() {
-        System.out.println("In from IP10, IPhone17 Special Features");
-    }
+//    void special_ip17() {
+//        System.out.println("In from IP10, IPhone17 Special Features");
+//    }
 }

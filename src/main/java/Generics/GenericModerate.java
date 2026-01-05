@@ -32,8 +32,8 @@ public class GenericModerate {
 //        list.add("Hello"); // Not Possible bcz WILDCARD is read-only. To ensure type-safety        
     }
     
-//    Lower Bound
-    void lowerBound(List<? extends Number> list){ // now we can't use String
+//    upper bounded wildcard (READ-Only)
+    void upperBound(List<? extends Number> list){ // now we can't use String
         
         for(Number i:list){ // Object will also work as it is the superclass
             System.out.println(i);
@@ -42,8 +42,8 @@ public class GenericModerate {
 //        list.add(7); -> read-only
     }
     
-//    Upper Bound
-    void upperBound(List<? super Integer> list){ // now we can use only those who are equavalent to Integer or its parent
+//    lower bounded wildcard
+    void lowerBound(List<? super Integer> list){ // now we can use only those who are equavalent to Integer or its parent
         
         list.add(7);// -> write-able
         
