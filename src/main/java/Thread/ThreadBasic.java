@@ -127,7 +127,7 @@ wait for these when user work is done.”
 //calling the start() method
 
 
-public class ThreadBasic extends Thread{
+public class ThreadBasic extends Thread {
     
     /////
     //Thread Class
@@ -156,7 +156,7 @@ public class ThreadBasic extends Thread{
         //System.out.println("inside run");
         //System.out.println("Name: "+ Thread.currentThread().getName());
   
-        for(int i=0;i<4;i++){
+        for(int i = 0; i < 4; i++){
             System.out.println(i+" : Name: "+ Thread.currentThread().getName());
            try{
             Thread.sleep(8);
@@ -171,7 +171,7 @@ public class ThreadBasic extends Thread{
         tb1.setName("A");
         tb1.start();// Application to thread Scheduler to be enlisted
         //tb1.run();
-        tb1.join();//Helps to hold esource untill finished
+        tb1.join();//Helps to hold resource until finished
         //tb1.join(500);//Holds for 500 ms
         
         ThreadBasic tb2 = new ThreadBasic();

@@ -8,7 +8,7 @@ import java.util.List;
  * @author KALLOL DAS KUSHOL
  */
 
-public class GenericClassA<T> {
+public class GenericClassA<T> { // Suppose we made a obj of this class with String then these all T will be replaced with String.
     
     T aa;
     void setValue(T n){

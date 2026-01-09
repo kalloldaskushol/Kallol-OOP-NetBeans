@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class GenericModerate {
     
-    <T> void printAtMethodLevel(T val) { // we can use Generic property at method level.
+    <T> void printAtMethodLevel(T val) { // we can use Generic property at method level. -> called GENERIC METHOD
         System.out.println(val);
     }
     
@@ -20,13 +20,13 @@ public class GenericModerate {
     }
     
 //    WildCard: -> works for cointainer: Array, List etc..
-    void wildCard(List<?> list){ // ? means anything is acceptable. //Access for everyone.
+    void wildCard(List<?> list_name){ // ? means anything is acceptable. //Access for everyone.
         
 //        for(Integer i:list){
 //            System.out.println(i);
 //        } // -> will not work for String
         
-        for(Object i:list){
+        for(Object i : list_name){
             System.out.println(i);
         }
 //        list.add("Hello"); // Not Possible bcz WILDCARD is read-only. To ensure type-safety        
