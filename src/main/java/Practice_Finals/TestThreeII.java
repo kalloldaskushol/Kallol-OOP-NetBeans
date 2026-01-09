@@ -1,5 +1,4 @@
 
-
 class InsufficientFundsException extends Exception{
 	
 	InsufficientFundsException(){}
@@ -12,7 +11,7 @@ class Wallet {
 	double balance;
 	
 	Wallet() {}
-	Wallet(int balance) {this.balance = balance;}
+	Wallet(int balance) {  this.balance = balance;	}
 	
 	public void spend(int amount)  throws InsufficientFundsException{
 		if(amount <= balance){
